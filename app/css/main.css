@@ -1,0 +1,20 @@
+.header {
+  height: 100px;
+  width: 400px;
+  text-align: center;
+  background-color: #70a869; }
+
+body {
+  width: 100%;
+  background-color: #bebebe;
+  font-size: 15px;
+  font-weight: 900;
+  font-family: Arial serif;
+  color: #2e2e2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9zY3NzL2Jsb2Nrcy9oZWFkZXIuc2NzcyIsImFwcC9zY3NzL21haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQWE7RUFDYixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLHlCQUFvQyxFQUFBOztBQ0F4QztFQUNJLFdBQVc7RUFDWCx5QkFOVTtFQU9WLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsd0JBQXdCO0VBQ3hCLGNBVFc7RUFVWCxvQkFBYTtFQUFiLG9CQUFhO0VBQWIsYUFBYTtFQUNiLG9DQUE0QjtFQUE1QiwrQkFBNEI7RUFBNUIsNEJBQTRCLEVBQUEiLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF19 */

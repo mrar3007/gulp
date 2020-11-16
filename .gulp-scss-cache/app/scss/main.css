@@ -1,0 +1,17 @@
+.header {
+  height: 100px;
+  width: 400px;
+  text-align: center;
+  background-color: #70a869; }
+
+body {
+  width: 100%;
+  background-color: #bebebe;
+  font-size: 15px;
+  font-weight: 900;
+  font-family: Arial serif;
+  color: #2e2e2e;
+  display: flex;
+  transition: all 0.2s ease-in; }
+
+/*# sourceMappingURL=main.css.map */
