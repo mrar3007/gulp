@@ -1,15 +1,44 @@
 .header {
+  display: flex;
   height: 100px;
   width: 400px;
   text-align: center;
   background-color: #70a869; }
+  .header .inner__header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-size: 24px;
+    color: yellow;
+    font-weight: 700; }
+  @media (max-width: 700px) {
+    .header {
+      width: 700px;
+      height: 100px; } }
+
+.footer {
+  width: 500px;
+  height: 200px;
+  background-color: #d48d8d;
+  margin: 0px 20px; }
+  @media (max-width: 700px) {
+    .footer {
+      width: 700px;
+      height: 100px; } }
+
+main {
+  height: 150px;
+  width: 100%;
+  background-color: #d0ff93; }
+  @media (max-width: 700px) {
+    main {
+      width: 700px;
+      height: 100px; } }
 
 body {
   width: 100%;
   background-color: #bebebe;
-  font-size: 15px;
-  font-weight: 900;
-  font-family: Arial serif;
   color: #2e2e2e;
   display: flex;
   transition: all 0.2s ease-in; }
