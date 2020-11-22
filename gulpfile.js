@@ -5,13 +5,24 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
-const notify = require('gulp-notify');
 const gcmp = require('gulp-group-css-media-queries');
+const sassGlob = require('gulp-sass-glob');
+const fileinclude = require('gulp-file-include');
+
+gulp.task('html', function(cb) {
+    return gulp.src('./app/html/*.html')
+        .pipe( fileinclude({
+            prefix: '@@'
+        }) )
+        .pipe( gulp.dest('./app/') );
+    cb();
+})
 
 gulp.task('sass', function(callback) {
     return gulp.src('./app/scss/main.scss')
         .pipe(plumber())
         .pipe(sourcemaps.init())
+        .pipe(sassGlob())
         .pipe(sass({
             indentType: "tab",
             indentWidth: 1,
@@ -30,6 +41,8 @@ gulp.task('watch', function(callback) {
     
     watch('./app/scss/**/*.scss', gulp.parallel( 'sass' ));
     
+    watch('./app/html/**/*.html', gulp.parallel( 'html' ));
+
     callback();
 });
 
@@ -41,4 +54,4 @@ gulp.task('server', function() {
     })
 });
 
-gulp.task('default', gulp.series('watch', 'sass','server'));
+gulp.task('default', gulp.series('html', 'watch', 'sass', 'server'));

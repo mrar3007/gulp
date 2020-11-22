@@ -1,8 +1,10 @@
-$gray: #bebebe;
-$black: #2e2e2e;
-@import "./blocks/header.scss";
+@import "./params/**/*.scss";
+
+@import "./blocks/**/*.scss";
+
+/* @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
-@import "./blocks/sidebar.scss";
+@import "./blocks/sidebar.scss"; */
 
 body {
     width: 100%;
